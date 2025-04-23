@@ -1,0 +1,537 @@
+@font-face{
+   font-family: Inter;
+   src: url(Inter_24pt-ExtraLight.ttf);
+}
+
+@font-face{
+   font-family: Inter-bold;
+   src: url(Inter_18pt-Bold.ttf);
+}
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'inter' !important;
+}
+
+body{
+   font-family: 'inter' !important;
+   height: 100vh;
+   display: flex;
+   
+}
+
+
+.profile-container{
+   display: none;
+}
+
+.left-content{
+   width: 50%;
+   background: #F40F0F;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 59px;
+}
+
+/* باکس  داخلی باکس  بزرگ چپ */
+.left-inner{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 100px;
+   width: 100%;
+}
+
+.img-container{
+   position: fixed;
+   top: 9.375rem;
+   height: 11.625rem;
+}
+.img-1{
+   max-width: 100%;
+   height: auto;
+}
+
+.left-content-title{
+   margin-bottom: 1.063rem;
+}
+
+.bottom-parent{
+   height: 10.563rem;
+   width: 100%; 
+   /* margin: 0 3.688rem 3.25rem 3.688rem; ; */
+   background:rgba(25, 25, 25, 0.22);
+   padding: 1.75rem 2.063rem 2.75rem 2rem;
+   border-radius: 50px;
+}
+
+.bottom-content{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   align-self: flex-end;
+   width: 100%;
+}
+
+.bottom-content h2{
+   color: #fff;
+   font-size: 1.25rem;
+   font-weight: 500;
+}
+
+.inner-top{
+   display: flex;
+   justify-content: start;
+}
+
+.lines-container-1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 0.375rem;
+}
+
+.circle{
+   width: 2.375rem;
+   height: 2.375rem;
+   border-radius: 50%;
+   background: rgba(0, 0, 0, 0.18);
+}
+
+.inner-top-line-1{
+   width: 4rem;
+   height: 0.25rem;
+   background: rgb(28, 28, 28, 0.32);
+   border-radius: 50px;
+}
+
+.inner-top-line-2{
+   width: 64px;
+   height: 4px;
+   background: rgb(28, 28, 28, 0.16);
+   border-radius: 50px;
+}
+
+.content{
+   width: 32.625rem;
+   background: rgba(0, 0, 0, 0.164);
+   border-radius: 41px;
+   padding: 1.8rem;
+}
+
+.inner-bottom{
+   display: flex;
+   flex-direction: column;
+   margin-top: 1.563rem;
+   gap: 6px;
+}
+
+.inner-bottom-line-1{
+   height: 0.25rem;
+   width: 100%;
+   background: #1B1B1B;
+   opacity: 18%;
+}
+.inner-bottom-line-2{
+   height: 0.25rem;
+   width: 100%;
+   background: #1B1B1B;
+   opacity: 14%;
+}
+.inner-bottom-line-3{
+   height: 0.25rem;
+   width: 100%;
+   background: #1B1B1B;
+   opacity: 10%;
+}
+.inner-bottom-line-4{
+   height: 0.25rem;
+   width: 50%;
+   background: #1B1B1B;
+   opacity: 6%;
+}
+
+.top{
+   display: flex;
+}
+
+.circle{
+   margin: 0 1rem 0 0;
+}
+
+.l2-lines{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 6px;
+   /* scale: 0.2; */
+}
+
+.bottom{
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   margin-top: 1rem;
+}
+
+.bottom img{
+   margin: 0 0 ;
+}
+
+.right-content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+}
+.span-warapper{
+   display: none;
+}
+.form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 60%;
+}
+.title{
+   align-self: start;
+}
+
+.title h1{
+   font-size: 48px;
+   font-weight: 700;
+   font-family: Inter-bold;
+}
+
+.title span{
+   font-family: Inter;
+   font-size: 24px;
+   opacity: 40%;
+}
+
+.input-container{
+   margin-top: 1.875rem;
+   width: 100%;
+}
+.label{
+   font-size: 24px;
+   font-weight: 500;
+}
+.input{
+   width: 100%;
+   height: 54px;
+   margin-top: 8px;
+   padding: 15px 2px 15px 34px;
+   font-size: 20px;
+   border: 2px solid rgba(0, 0, 0, 0.164);
+   outline: none;
+   transition: all 1s;
+   border-radius: 100px;
+   fill-opacity: 100%;
+   color: #101010;
+}
+
+input::placeholder {
+   color:#565656; /* رنگ مورد نظر */
+   opacity: 50%; /* شفافیت از 0 تا 1 */
+}
+
+/* .input:hover{
+   box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+.input:focus{
+   box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+} */
+
+.btn-container{
+   align-self: end;
+   margin-top: 50px;
+   width: 50%;
+}
+.button{
+   width: 100%;
+   height: 3.438rem;
+   font-size: 21px;
+   border-radius: 32px;
+   background: #EB1414;
+   color: #ffffff;
+   border: none;
+   transition: all 1s;
+   font-family:'Inter-Bold' !important;
+
+}
+
+.button:hover{
+   box-shadow: #EB1414 0px 20px 30px -10px;
+}
+
+.button:focus{
+   box-shadow: #EB1414 0px 20px 30px -10px;
+}
+
+/* dark & light mode theme */
+
+/* dark mode */
+
+body.light{
+   --bg-color: #ffffff;
+   --text-color:#000000;
+   --svg-light-mode-fill-color:#000000 !important;
+}
+
+body.dark{
+   --bg-color: #000000;
+   --text-color:#f1f1f1;
+   --bg-input-color:#717171;
+   --text-input-color:#f1f1f1;
+   --svg-dark-mode-fill-color:#ffffff !important;
+}
+
+
+/* light mode */
+
+
+body{
+   background-color: var(--bg-color);
+   color: var(--text-color);
+   transition: all 0.3s ease;
+}
+
+input{
+   background-color: var(--bg-input-color);
+   color: var(--text-input-color);
+   transition: all 0.3s ease;
+}
+
+.ctb{
+   padding: 0.5rem 1rem;
+   margin: 1rem;
+   cursor: pointer;
+   scale: 0.1;
+}
+
+.dropdown{
+   width: 11rem;
+   height: 11rem;
+}
+
+svg{
+   scale:1;
+   fill: var(--svg-light-mode-fill-color) !important;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 440px){
+   body{
+      flex-wrap: wrap; 
+   }
+
+   .profile-container{
+   
+      width: 100%;
+      height: 43px;
+      background: #101010;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .img-container{
+      display: none;
+   }
+
+   .left-content{
+      width: 100%;
+      height: 28%;
+      padding: 3.75rem 2.5rem;
+
+   }
+
+   .content{
+      border-radius: 58px;
+      /* height: 9rem; */
+      /* padding: 29px; */
+      scale: 0.9;
+      width: 22rem;
+   }
+
+   .bottom-content h2{
+      font-size: 14px;
+      margin-bottom: 0.625rem;
+   }
+
+   /* .bottom-content{
+
+   } */
+
+   .bottom-parent{
+      height: 100%;
+      padding: 6%;
+      border-radius: 33px;
+   }
+
+   .lines-container-1{
+      gap: 4px;
+   }
+
+   .inner-top-line-1{
+      height: 2.68px;
+      width: 43px;
+   }
+
+   .inner-top-line-2{
+      height: 2.68px;
+      width: 43px;
+      
+   }
+
+   .circle{
+      width: 1.563rem;
+      height: 1.563rem;
+      margin: 0 8.5px 0 0;
+   }
+
+   .inner-bottom{
+      gap: 4px;
+      margin-top: 8px;
+   }
+
+   .inner-bottom-line-1{
+      width: 100%;
+      height: 2.64px;
+   }
+
+   .inner-bottom-line-2{
+      width: 100%;
+      height: 2.64px;
+   }
+
+   .inner-bottom-line-3{
+      width: 100%;
+      height: 2.64px;
+   }
+
+   .inner-bottom-line-4{
+      width: 100%;
+      height: 2.64px;
+   }
+
+   /* Right content */
+
+   .right-content{
+      width: 100%;
+      height: 100%;
+   }
+
+   .title h1{
+      font-size: 26px;
+   }
+
+   .title span{
+      font-size: 14px;
+   }
+
+   .label{
+      font-size: 16px;
+   }
+
+   .input{
+      height: 40px;
+      padding: 0.75rem 0 0.75rem 1.625rem;
+   }
+
+   input::placeholder {
+      color:#565656; /* رنگ مورد نظر */
+      opacity: 100٪; /* شفافیت از 0 تا 1 */
+      font-size: 16px;
+   }
+   
+   .input-container{
+      margin-top: 1.625rem;
+   }
+
+   .button{
+      height: 100%;
+      width: 100%;
+      font-size: 13px;
+   }
+
+   .btn-container{
+      margin-top: 2.5rem;
+      height: 2.688rem;
+      width: 45%;
+   }
+   
+}
+
+/* @media screen and (max-width: 350px){
+
+   body{
+      width: 47vh;
+   }
+
+   .profile-container{
+   
+      width: 100%;
+      height: 43px;
+      background: #101010;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .left-content{
+      width: 115%;
+      height: 266px;
+      padding-right: 1rem;
+   }
+
+   .bottom-content{
+      scale: 0.8;
+   }
+
+   .right-content{
+      width: 94%;
+      height: 79%;
+   }
+
+   .title{
+      margin-left: 1.5rem;
+   }
+
+   .title h1{
+      font-size: 26px;
+   }
+
+   .title span{
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.4);
+   }
+
+   .input-container{
+      scale: 0.7;
+   }
+
+   .input{
+    height: 60px;  
+   }
+
+   .btn-container{
+      scale: 0.7;
+   }
+
+   .form{
+      width: 81%;
+   }
+} */
